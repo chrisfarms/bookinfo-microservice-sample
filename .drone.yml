@@ -1,9 +1,9 @@
+---
 pipeline:
   build:
-    when:
-      branch: master
-    image: golang
+    image: node:latest
     commands:
-      - go get
-      - go build
-      - go test
+      - npm install
+      - npm run test
+branches: master
+
